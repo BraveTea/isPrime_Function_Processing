@@ -33,6 +33,10 @@ boolean isDivisibleOnlyBySelf(int num) {
 
 
 /*
+
+This was the original code I had to work with (although it was in Dutch so the variable names are mangled.
+The exercise was to rewrite the code and make use of several smaller functions to use in the main function.
+
 void setup(){
  for (int currentNumber = 2; currentNumber < 1000; currentNumber++){
  boolean prime = true;
