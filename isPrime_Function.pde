@@ -3,9 +3,10 @@ void setup() {
 }
 
 boolean isPrime(int num) {
-  if (isLargerThanOne(num)==true && isDivisibleOnlyBySelf(num) == true ) {
+  if (isLargerThanOne(num)==true && isDivisibleOnlyBySelf(num) == true) {
     return true;
-  } else {
+  } 
+  else {
     return false;
   }
 }
@@ -13,7 +14,8 @@ boolean isPrime(int num) {
 boolean isLargerThanOne(int num) {
   if (num > 1) {
     return true;
-  } else {
+  } 
+  else {
     return false;
   }
 }
