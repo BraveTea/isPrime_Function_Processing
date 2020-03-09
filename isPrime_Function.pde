@@ -1,9 +1,9 @@
 void setup() {
-  println(isPrime(10));
+  println(isPrime(225));
 }
 
 boolean isPrime(int num) {
-  if (isLargerThanOne(num)==true && isComposite(num)==false && isDivisibleOnlyBySelf(num) == true ) {
+  if (isLargerThanOne(num)==true && isDivisibleOnlyBySelf(num) == true ) {
     return true;
   } else {
     return false;
@@ -12,14 +12,6 @@ boolean isPrime(int num) {
 
 boolean isLargerThanOne(int num) {
   if (num > 1) {
-    return true;
-  } else {
-    return false;
-  }
-}
-
-boolean isComposite(int num) {
-  if (num % num != 0) {
     return true;
   } else {
     return false;
