@@ -15,11 +15,7 @@ boolean isPrime(int num) {
 }
 
 boolean isLargerThanOne(int num) {
-  if (num > 1) {
-    return true;
-  } else {
-    return false;
-  }
+  return num > 1;
 }
 
 boolean isDivisibleOnlyBySelf(int num) {
