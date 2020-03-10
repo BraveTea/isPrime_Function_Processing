@@ -1,12 +1,15 @@
 void setup() {
-  println(isPrime(225));
+  println(isPrime(6));
+  for (int i = 0; i < 100; i++){
+    println(i, "=", isPrime(i));
+  }
 }
 
+
 boolean isPrime(int num) {
-  if (isLargerThanOne(num)==true && isDivisibleOnlyBySelf(num) == true) {
+  if (isLargerThanOne(num) && isDivisibleOnlyBySelf(num)) {
     return true;
-  } 
-  else {
+  } else {
     return false;
   }
 }
@@ -14,14 +17,13 @@ boolean isPrime(int num) {
 boolean isLargerThanOne(int num) {
   if (num > 1) {
     return true;
-  } 
-  else {
+  } else {
     return false;
   }
 }
 
 boolean isDivisibleOnlyBySelf(int num) {
-  for (int i = 2; i < num; i++) {
+  for (int i = 2; i < num/2+1; i++) {
     if (num % i == 0) {
       return false;
     }
@@ -33,10 +35,6 @@ boolean isDivisibleOnlyBySelf(int num) {
 
 
 /*
-
-This was the original code I had to work with (although it was in Dutch so the variable names are mangled.
-The exercise was to rewrite the code and make use of several smaller functions to use in the main function.
-
 void setup(){
  for (int currentNumber = 2; currentNumber < 1000; currentNumber++){
  boolean prime = true;
